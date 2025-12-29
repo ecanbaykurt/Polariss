@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-space-dark text-white overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-orange-500;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+  
+  .star {
+    @apply absolute rounded-full bg-white;
+    animation: sparkle 3s ease-in-out infinite;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes float3d {
+  0%, 100% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px) translateZ(0px);
+  }
+  25% {
+    transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) translateY(-10px) translateZ(20px);
+  }
+  50% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-15px) translateZ(30px);
+  }
+  75% {
+    transform: perspective(1000px) rotateX(-5deg) rotateY(5deg) translateY(-10px) translateZ(20px);
+  }
+}
+
+.star-title-3d {
+  display: inline-block;
+  animation: float3d 8s ease-in-out infinite;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.star-title-3d:hover {
+  animation-play-state: paused;
+  transform: perspective(1000px) rotateX(10deg) rotateY(10deg) translateZ(50px) scale(1.05);
+}
+
+@keyframes flow-timeline {
+  0% {
+    left: -128px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    left: calc(100% + 128px);
+    opacity: 0;
+  }
+}
+
+.animate-flow-timeline {
+  animation: flow-timeline 6s linear infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-space-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-500;
+}
+

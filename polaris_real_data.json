@@ -1,0 +1,29 @@
+{
+  "raw_data": {
+    "source_id": "131081166581443968",
+    "distance_parsec": 136.8,
+    "distance_ly": 446.18192471650485,
+    "distance_uncertainty_ly": 0.5,
+    "parallax_mas": 7.31,
+    "parallax_error_mas": 0.02,
+    "radial_velocity_km_s": 3.76,
+    "radial_velocity_error_km_s": 0.1,
+    "proper_motion_ra_mas_yr": -18.11,
+    "proper_motion_dec_mas_yr": -17.22,
+    "source": "GAIA EDR3",
+    "priority": "GAIA EDR3",
+    "fetch_date": "2025-12-23T07:36:20.271301+00:00"
+  },
+  "updated_parameters": {
+    "name": "Polaris",
+    "distance_ly": 446.18192471650485,
+    "distance_ly_uncertainty": 0.5,
+    "radial_velocity_km_s": 3.76,
+    "radial_velocity_uncertainty_km_s": 0.1,
+    "proper_motion_ra_mas_yr": -18.11,
+    "proper_motion_dec_mas_yr": -17.22,
+    "source": "GAIA EDR3",
+    "data_priority": "GAIA EDR3",
+    "fetch_date": "2025-12-23T07:36:20.271301+00:00"
+  }
+}

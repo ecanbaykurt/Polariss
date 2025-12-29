@@ -1,0 +1,42 @@
+{
+  "Zaman Ölçeği": {
+    "baslangic_tarihi": "1925-12-23T08:07:07.818701+00:00",
+    "bitis_tarihi": "2025-12-23T08:07:07.818701+00:00",
+    "yil_araligi": 100,
+    "birim": "yıl"
+  },
+  "Kuzeye En Yakın Yıldız": {
+    "isim": "Polaris",
+    "alternatif_isimler": [
+      "α Ursae Minoris",
+      "Kutup Yıldızı",
+      "North Star"
+    ],
+    "takimyildiz": "Ursa Minor (Küçük Ayı)",
+    "aciklama": "Polaris, Kuzey Kutbu'na en yakın parlak yıldızdır ve navigasyon için kullanılır."
+  },
+  "Kuzey Kutbuna Yakınlık": {
+    "açısal_uzaklik_derece": 0.7,
+    "açısal_uzaklik_dakika": 42,
+    "birim": "derece",
+    "aciklama": "Polaris şu anda Kuzey Gök Kutbu'ndan yaklaşık 0.7 derece uzaklıktadır. Bu mesafe zamanla değişmektedir."
+  },
+  "Dünya'ya Uzaklık": {
+    "guncel_mesafe_ly": 446.181924716505,
+    "mesafe_100_yil_once_ly": 446.180670515507,
+    "mesafe_farki_ly": 0.001254200998,
+    "radyal_hiz_km_s": 3.76,
+    "hareket_yonu": "Dünya'dan uzaklaşıyor",
+    "birim": "ışık yılı (ly)",
+    "not": "Son 100 yılda mesafe 0.001254200998 ışık yılı değişmiştir."
+  },
+  "Hesaplama Detayları": {
+    "referans_tarihi": "2025-12-23T08:07:07.818701+00:00",
+    "hesaplanan_tarih": "1925-12-23T08:07:07.818701+00:00",
+    "kullanilan_radyal_hiz": 3.76,
+    "kullanilan_baslangic_mesafesi": 446.18192471650485,
+    "hesaplama_yontemi": "Kinematik ekstrapolasyon: d(t) = d₀ + v_r · t",
+    "temel_mesafe_yontemi": "Trigonometrik paralaks: d(parsec) = 1 / p(arcsec)",
+    "not": "Temel mesafe Gaia/Hubble astrometrisinden gelir. Gelecek/geçmiş tahminleri radyal hız kullanır."
+  }
+}
